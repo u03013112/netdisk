@@ -1,5 +1,4 @@
 #!/bin/sh
-mkdir /home/nd -p
-touch /home/nd/filebrowser.d
+touch ./filebrowser.db
 
 echo "please install docker & docker-compose first"
