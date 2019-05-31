@@ -27,3 +27,11 @@ services:
     environment:
       - SECRET=123456a131
   
+  frpc:
+    image: oldiy/frpc
+    container_name: 'frpc'
+    restart: always
+    volumes:
+      - ./frpc.ini:/frp/frpc.ini
+    tty: true
+    network_mode: host
