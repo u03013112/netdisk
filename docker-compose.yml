@@ -10,7 +10,7 @@ services:
       - ./.filebrowser.json:/.filebrowser.json
     tty: true
     ports:
-      - 8003:80
+      - 18003:80
 
   aria2:
     image: xujinkai/aria2-with-webui
@@ -21,9 +21,9 @@ services:
       - ./ariaConf:/conf
     tty: true
     ports:
-      - 8000:6800
-      - 8001:80
-      - 8002:8080
+      - 18000:6800
+      - 18001:80
+      - 18002:8080
     environment:
       - SECRET=123456a131
   
